@@ -80,13 +80,11 @@ function Musics() {
 
   return (
     <Container className="container">
-      <Button
-        style={{ justifyContent: "center" }}
-        variant="outline-light"
-        onClick={handleShow}
-      >
-        Adicionar musica
-      </Button>
+      <Col className="button-container">
+        <Button variant="outline-light" onClick={handleShow}>
+          Adicionar musica
+        </Button>
+      </Col>
 
       <Row>
         {musics.map((music) => (
@@ -140,6 +138,7 @@ function Musics() {
                 id="music-file"
                 onChange={(e) => setFileMusic(e.target.files[0])}
                 label="Escolha uma musica"
+                accept="audio/*"
                 required
               />
             </Form.Group>

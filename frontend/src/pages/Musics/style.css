@@ -28,3 +28,7 @@ body {
 .fa-trash:hover {
   cursor: pointer;
 }
+
+.button-container {
+  text-align: center;
+}
